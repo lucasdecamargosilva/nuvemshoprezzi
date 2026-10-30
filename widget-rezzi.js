@@ -191,9 +191,6 @@ setInterval(function(){var el=document.getElementById('q-step-error');if(!el)ret
             cursor: pointer; transition: background 0.25s, color 0.25s;
             margin: 0 0 14px; box-sizing: border-box;
         }
-        .q-btn-inline-provador:hover { background: var(--c-ink); color: #fff; }
-        /* Rezzi: loja com fundo escuro -> botao claro (cinza do logo) */
-        .q-btn-inline-provador { color: #e7e5e5 !important; border-color: #cbc8c8 !important; background: transparent !important; }
         .q-btn-inline-provador:hover { background: #cbc8c8 !important; color: #000 !important; }
         .q-btn-inline-provador svg { width: 14px; height: 14px; flex-shrink: 0; }
 
@@ -1107,7 +1104,8 @@ setInterval(function(){var el=document.getElementById('q-step-error');if(!el)ret
                 imp('padding', '0 16px');
                 imp('margin', '0 0 14px');
                 // sem fundo: contorno e texto na cor do "Comprar" (pedido do Lucas 19/10)
-                const cor = cs.backgroundColor && cs.backgroundColor !== 'rgba(0, 0, 0, 0)' ? cs.backgroundColor : cs.color;
+                // Rezzi (30/10): loja de fundo escuro com Comprar preto -> contorno/texto no cinza claro do logo
+                const cor = '#cbc8c8';
                 imp('background-color', 'transparent');
                 imp('color', cor);
                 imp('border', '1.5px solid ' + cor);
