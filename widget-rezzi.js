@@ -192,6 +192,9 @@ setInterval(function(){var el=document.getElementById('q-step-error');if(!el)ret
             margin: 0 0 14px; box-sizing: border-box;
         }
         .q-btn-inline-provador:hover { background: var(--c-ink); color: #fff; }
+        /* Rezzi: loja com fundo escuro -> botao claro (cinza do logo) */
+        .q-btn-inline-provador { color: #e7e5e5 !important; border-color: #cbc8c8 !important; background: transparent !important; }
+        .q-btn-inline-provador:hover { background: #cbc8c8 !important; color: #000 !important; }
         .q-btn-inline-provador svg { width: 14px; height: 14px; flex-shrink: 0; }
 
         /* ── Modal overlay ── */
